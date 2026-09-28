@@ -1,5 +1,7 @@
 # Atividades PHP 01 a 06
 
+Estou usando um compilador online para executar os códigos: https://onecompiler.com/php
+
 Este projeto reúne exercícios em PHP organizados por numeração. Cada arquivo `ex_0x.php` contém uma solução simples e isolada, focada em uma função específica.
 
 ## Atividade 1
