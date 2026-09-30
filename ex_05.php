@@ -36,8 +36,8 @@ return "Palavras: " . $palavras . "; Caracteres: " . $caracteres . "; Vogais: " 
 
 $texto = "Olá, tudo bem? Me chamo antonio.";
 
-echo "Texto completo: " . $texto . '<br> <br>';
+echo "Texto completo: " . $texto . "\n";
 
-echo analisarTexto($texto);
+echo "Resultado: " . analisarTexto($texto) . "\n";
 
 ?>

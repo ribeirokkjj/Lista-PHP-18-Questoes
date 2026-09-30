@@ -8,10 +8,10 @@ function inverterTexto($texto) {
 
     $text = "Teste";
 
-    echo "Texto original: $text<br>";
+    echo "Texto original: " . $text . "\n";
 
-    echo "Texto invertido: " . inverterTexto($text) . "<br>";
+    echo "Texto invertido: " . inverterTexto($text) . "\n";
 
-    echo "Quantidade de caracteres: " . strlen($text)
+    echo "Quantidade de caracteres: " . strlen($text) . "\n";
 
 ?>
