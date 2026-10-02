@@ -1,5 +1,7 @@
 <?php
 
+// OBS: Esse codigo eu fiz bem antes da rec
+
 function senhaCases($senha, &$maiusculas, &$minusculas){
 
     for($i = 0; $i < strlen($senha); $i++) {

@@ -1,5 +1,4 @@
 <?php
-
 function analisarProdutos($produtos) {
 
     $maisCaro = $produtos[0];
@@ -8,17 +7,19 @@ function analisarProdutos($produtos) {
     $opcoesPesquisa = "produtos disponíveis: ";
 
     for ($i = 0; $i < count($produtos); $i++) {
-        if ($produtos[$i]["preco"] > $maisCaro["preco"]) {
+        $nome = $produtos[$i][0];
+        $preco = $produtos[$i][1];
+
+        if ($preco > $maisCaro[1]) {
             $maisCaro = $produtos[$i];
         }
 
-        if ($produtos[$i]["preco"] < $maisBarato["preco"]) {
+        if ($preco < $maisBarato[1]) {
             $maisBarato = $produtos[$i];
         }
 
-        $somaPrecos += $produtos[$i]["preco"];
-
-        $opcoesPesquisa .= $produtos[$i]["nome"];
+        $somaPrecos += $preco;
+        $opcoesPesquisa .= $nome;
 
         if ($i < count($produtos) - 1) {
             $opcoesPesquisa .= ", ";
@@ -33,24 +34,22 @@ function analisarProdutos($produtos) {
     $resultadoPesquisa = "produto não encontrado.";
 
     for ($i = 0; $i < count($produtos); $i++) {
-        if (strtolower($produtos[$i]["nome"]) === $nomePesquisa) {
-            $resultadoPesquisa = "produto encontrado: " . $produtos[$i]["nome"] . " - R$ " . number_format($produtos[$i]["preco"], 2, ",", ".");
+        if (strtolower($produtos[$i][0]) === $nomePesquisa) {
+            $resultadoPesquisa = "produto encontrado: " . $produtos[$i][0] . " - R$ " . $produtos[$i][1];
             break;
         }
     }
 
-    return "produto mais caro: " . $maisCaro["nome"] . " - R$ " . 
-    number_format($maisCaro["preco"], 2, ",", ".") . "; produto mais barato: " . 
-    $maisBarato["nome"] . " - R$ " . number_format($maisBarato["preco"], 2, ",", ".") . 
-    "; média dos preços: R$ " . number_format($mediaPrecos, 2, ",", ".") . "; pesquisa de produto: " . $resultadoPesquisa;
+    return "produto mais caro: " . $maisCaro[0] . " - R$ " . $maisCaro[1] . "; produto mais barato: " .
+    $maisBarato[0] . " - R$ " . $maisBarato[1] . "; média dos preços: R$ " . $mediaPrecos . "; pesquisa de produto: " . $resultadoPesquisa;
 }
 
 $catalogo = [
-    ["nome" => "Mouse", "preco" => 120.00],
-    ["nome" => "Teclado", "preco" => 230.50],
-    ["nome" => "Monitor", "preco" => 899.99],
-    ["nome" => "Notebook", "preco" => 2499.90],
-    ["nome" => "Headset", "preco" => 180.00]
+    ["mouse", 120.00],
+    ["teclado", 230.50],
+    ["monitor", 899.99],
+    ["notebook", 2499.90],
+    ["headset", 180.00]
 ];
 
 echo analisarProdutos($catalogo);
