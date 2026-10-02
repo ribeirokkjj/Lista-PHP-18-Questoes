@@ -17,6 +17,6 @@ return $senha;
 
 $tamanhoSenha = 12;
 
-echo "Senha gerada: ".gerarSenha($tamanhoSenha);
+echo "senha gerada: ".gerarSenha($tamanhoSenha);
 
 ?>

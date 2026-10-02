@@ -21,7 +21,7 @@ function formatarTexto($texto) {
 
     $quantidadeCaracteres = strlen($texto);
 
-    return "Texto em maiúsculas: ".$maiusculo."; Texto em minúsculas: ".$minusculo."; Primeira letra de cada palavra: ".$titulo."; Quantidade de caracteres: ".$quantidadeCaracteres;
+    return "texto em maiúsculas: ".$maiusculo."; texto em minúsculas: ".$minusculo."; primeira letra de cada palavra: ".$titulo."; quantidade de caracteres: ".$quantidadeCaracteres;
 
 }
 

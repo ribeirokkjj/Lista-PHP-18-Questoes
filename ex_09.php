@@ -3,9 +3,9 @@
 function analisarNumero($numero) {
 
     if ($numero % 2 == 0) {
-        $parOuImpar = "Par";
+        $parOuImpar = "par";
     } else {
-        $parOuImpar = "Ímpar";
+        $parOuImpar = "ímpar";
     }
 
     $primo = true;
@@ -22,9 +22,9 @@ function analisarNumero($numero) {
     }
 
     if ($primo) {
-        $statusPrimo = "Primo";
+        $statusPrimo = "primo";
     } else {
-        $statusPrimo = "Não primo";
+        $statusPrimo = "não primo";
     }
 
     $somaDivisores = 0;
@@ -36,12 +36,12 @@ function analisarNumero($numero) {
     }
 
     if ($somaDivisores == $numero) {
-        $statusPerfeito = "Perfeito";
+        $statusPerfeito = "perfeito";
     } else {
-        $statusPerfeito = "Não perfeito";
+        $statusPerfeito = "não perfeito";
     }
 
-    return "Número: ".$numero."; Par ou ímpar: ".$parOuImpar."; Primo: ".$statusPrimo."; Perfeito: ".$statusPerfeito;
+    return "número: ".$numero."; par ou ímpar: ".$parOuImpar."; primo: ".$statusPrimo."; perfeito: ".$statusPerfeito;
 
 }
 

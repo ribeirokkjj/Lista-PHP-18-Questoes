@@ -30,14 +30,14 @@ $consoantes++;
 
 }
 
-return "Palavras: " . $palavras . "; Caracteres: " . $caracteres . "; Vogais: " . $vogais . "; Consoantes: " . $consoantes;
+return "palavras: " . $palavras . "; caracteres: " . $caracteres . "; vogais: " . $vogais . "; consoantes: " . $consoantes;
 
 }
 
 $texto = "Olá, tudo bem? Me chamo antonio.";
 
-echo "Texto completo: " . $texto . "\n";
+echo "texto completo: " . $texto . "\n";
 
-echo "Resultado: " . analisarTexto($texto) . "\n";
+echo "resultado: " . analisarTexto($texto) . "\n";
 
 ?>

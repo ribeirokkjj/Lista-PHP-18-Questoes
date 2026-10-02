@@ -21,14 +21,14 @@ function calcularMedia($notas) {
     $media = $soma / count($notas);
 
     if ($media >= 7) {
-        $situacao = "Aprovado";
+        $situacao = "aprovado";
     } else if ($media >= 5) {
-        $situacao = "Recuperação";
+        $situacao = "recuperação";
     } else {
-        $situacao = "Reprovado";
+        $situacao = "reprovado";
     }
 
-    return "Maior nota: ".$maior."; Menor nota: ".$menor."; Média final: ".$media."; Situação final: ".$situacao;
+    return "maior nota: ".$maior."; menor nota: ".$menor."; média final: ".$media."; situação final: ".$situacao;
 
 }
 

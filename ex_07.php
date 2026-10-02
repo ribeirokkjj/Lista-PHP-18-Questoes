@@ -12,7 +12,7 @@ if ($valor > 100) {
     $valorDescontado = $valorDescontado  * 0.7;
 }
 
-return "Valor sem desconto: ".$valor."; Valor com desconto: ".$valorDescontado;
+return "valor sem desconto: ".$valor."; valor com desconto: ".$valorDescontado;
 
 }
 

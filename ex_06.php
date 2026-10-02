@@ -5,7 +5,7 @@ function converterTemperatura($temperatura) {
     $fahrenheitConvert = ($temperatura * 1.8) + 32;
     $kelvinConvert = $temperatura + 273.15;
 
-    return "Temperatura original (ºC): ".$temperatura."; Conversão em Fahrenheit: ".$fahrenheitConvert."; Conversão em Kelvin: ".$kelvinConvert;
+    return "temperatura original (ºc): ".$temperatura."; conversão em fahrenheit: ".$fahrenheitConvert."; conversão em kelvin: ".$kelvinConvert;
 
 }
 
